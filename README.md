@@ -36,7 +36,11 @@ By substituting the original convolution block in U-Net with U-Lite's Axial Dept
 **Hyperparameters**
 - Epochs: **100**
 - Learning rate: **0.001**
-- Scheduler: **ReduceLROnPlateau** (reduce LR on validation plateau)
+- Scheduler: **ReduceLROnPlateau** (reduce LR by scaling 0.8 on validation plateau)
+
+**Result** of ***Semantic Segmentation***
+- Dice score = 90.7 $\pm$ 0.1\%
+- IoU score = 83.4 $\pm$ 0.1\%
 
 ## **References**
 - U-Net++ model: https://arxiv.org/abs/1807.10165

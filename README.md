@@ -42,6 +42,20 @@ By substituting the original convolution block in U-Net with U-Lite's Axial Dept
 - Dice score = 90.7 $\pm$ 0.1\%
 - IoU score = 83.4 $\pm$ 0.1\%
 
+**Plotting training results**
+<p align="center">
+  <img src="Images/output.png" alt="Plotting" width = '600'/> <br>
+  <em> Plots of metrics and loss </em>
+</p>
+
+**Visualization of segmented outputs**
+<p align="center">
+  <img src="Images/SegmentedOutput.png" alt="Pred" width = '600'/> <br>
+  <em> Segmented predictions </em>
+</p>
+
+
+
 ## **References**
 - U-Net++ model: https://arxiv.org/abs/1807.10165
 - U-Lite model: https://arxiv.org/pdf/2306.16103

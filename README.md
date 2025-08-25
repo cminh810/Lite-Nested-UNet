@@ -7,14 +7,14 @@ for Medical Image Segmentation* by Zongwei Zhou, Md Mahfuzur Rahman Siddiquee,
 Nima Tajbakhsh, and Jianming Liang and some of U-Lite modules in *1M PARAMETERS ARE ENOUGH? A LIGHTWEIGHT CNN-BASED
 MODEL FOR MEDICAL IMAGE SEGMENTATION* by Binh-Duong Dinh, Thanh-Thu Nguyen, Thi-Thao Tran, Van-Truong Pham.
 
-By substituting the original convolution block in U-Net with U-Lite's Axial Depth-wise Convolution module, the model successfully reduce the number of parameters from 8.9M (my code version of U-Net++) to a little over 1.1M, if the filters are halved, the number of parameters is only about 300k, which is incredibly small with respect to the proposed U-Net++.
+By substituting the original convolution block in U-Net with U-Lite's Axial Depth-wise Convolution module, the model successfully reduce the number of parameters from 8.9M (my code version of U-Net++) to a little over 1.1M. If the filters are halved, the number of parameters is only about 300k, which is incredibly small with respect to the proposed U-Net++.
 
 ## **Model details**
 
 **Features**
 1. **Deep supervision** for decoder heads
 2. **Squeeze-and-Excitation (SE)** blocks
-3. **Composite loss**: Focal + Focal-Tversky + Boundary (weights configurable)
+3. **Composite loss**: Focal + Focal-Tversky + Boundary (with weights)
 4. **Evaluation**: Global Dice (F1) and IoU
 
 **Dataset**
@@ -39,8 +39,10 @@ By substituting the original convolution block in U-Net with U-Lite's Axial Dept
 - Scheduler: **ReduceLROnPlateau** (reduce LR by scaling 0.8 on validation plateau)
 
 **Result** of ***Semantic Segmentation***
-- Dice score = 90.7 $\pm$ 0.1\%
-- IoU score = 83.4 $\pm$ 0.1\%
+- Dice score = 90.3 $\pm$ 0.1\%
+- IoU score = 83.1 $\pm$ 0.1\%
+- Parameters = 1,143,323
+- GFLOPS = 2.11 
 
 **Plotting training results**
 <p align="center">
